@@ -17,13 +17,15 @@ int main (int argc, char** argv) {
 	if(inFile)
 	{
 		CC.countFileOccurences(inFile);
-		std::cout << "Occurences in file: " << CC.getOccurences() << std::endl;
+		// std::cout << "Occurences in file: " << CC.getOccurences() << std::endl;
+		std::cout << CC.getOccurences() << std::endl;
 		inFile.close();
 	}
 	else //if first arg aint a file assume we have args to search only
 	{
 		CC.countArgOccurences(argc,argv);
-		std::cout << "Occurences on command line: " << CC.getOccurences() << std::endl;
+		// std::cout << "Occurences on command line: " << CC.getOccurences() << std::endl;
+		std::cout << CC.getOccurences() << std::endl;
 	}
 
 	return 0;

@@ -1,2 +1,0 @@
-# litteCatCounter
-count cat occurences
